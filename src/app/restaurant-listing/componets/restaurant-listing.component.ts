@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { RestaurantService } from '../service/restaurant.service';
-import { restaurant } from 'src/app/shared/model/restaurant';
+import { Restaurant } from 'src/app/shared/model/restaurant';
 
 @Component({
   selector: 'app-restaurant-listing',
@@ -10,7 +10,7 @@ import { restaurant } from 'src/app/shared/model/restaurant';
 })
 export class RestaurantListingComponent {
 
-  public restaurantList: restaurant[];
+  public restaurantList: Restaurant[];
   ngOnInit()
   {
     this.getRestaurantList();

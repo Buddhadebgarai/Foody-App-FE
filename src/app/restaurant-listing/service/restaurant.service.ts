@@ -20,6 +20,7 @@ export class RestaurantService {
 
   private handleError(error: any) {
     console.error('An error occurred:', error);
+    alert("Reataurant Service is down")
     return throwError(error.message || error);
   }
 
